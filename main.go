@@ -38,7 +38,7 @@ func main() {
 
   // Read access token from the environment variable "ACCESS_TOKEN"
   accessToken = os.Getenv("ACCESS_TOKEN")
-  fmt.Println("Access Token:", accessToken) // For debugging, remove for security issues
+  fmt.Println("Access Token: ", accessToken) // For debugging, remove for security issues
 
   // Attempt to create a JWT token using the access token from the environment
   jwt, err := pubsub.CreateAppJwt(accessToken)
